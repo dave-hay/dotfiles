@@ -1,4 +1,17 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
 - link:
     ~/.config/nvim:
       create: true
       path: config/nvim
+    ~/.config/karabiner/karabiner.json:
+      create: true
+      path: config/karabiner/karabiner.json
+    ~/.tmux.conf: tmux.conf
+    ~/.ideavimrc: ideavimrc
+    ~/.zprofile: zprofile
+    ~/.zshrc: zshrc
