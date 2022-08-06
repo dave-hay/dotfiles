@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# ez dock
+
+case $1 in
+    build | b)
+      docker build --tag "$2" .
+      echo "building"
+        ;;
+    images | i)
+      docker images
+        ;;
+    help | -h)
+        echo "dont worry lad 🤙"
+        echo "📝 commands are..."
+        echo "images -> show all images"
+        echo "build -> builds"
+        echo "reset"
+esac

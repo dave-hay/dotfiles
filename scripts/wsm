@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# ez git commands
+
+case $1 in
+    build | b)
+        GOOS=js GOARCH=wasm go build -o main.wasm
+        ;;
+    exec | e)
+        cp "$(go env GOROOT)/misc/wasm/wasm_exec.js" .
+        ;;
+    run | r)
+        GOOS=js GOARCH=wasm go test -exec="$(go env GOROOT)/misc/wasm/go_js_wasm_exec"
+        ;;
+    test | t)
+        GOOS=js GOARCH=wasm go test -exec="$(go env GOROOT)/misc/wasm/go_js_wasm_exec"
+        echo -n "pushin' 🅿️ homie"
+        ;;
+    help | -h)
+        echo "build | b compiles main.go"
+        echo "exec | e creates wasm_exec.js"
+        echo "run | r node run"
+        echo "test | t node test"
+esac

@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+
+##########################################
+# System
+##########################################
+
+# Create a new directory and enter it
+function mk() {
+  mkdir -p "$@" && cd "$@" || exit
+}
+
+function len() {
+  var="$1"
+  echo ${#var}
+}
+
+# copy directory
+function cpdir() {
+  cp -R "$1" "$2"
+}
+
+# Move directory
+function mvdir() {
+  mv -R "$1" "$2"
+}
+
+# Creates new brew dump file. If one exists this will delete it.
+function brdump() {
+  BRFILE="$HOME/.dotfiles/Brewfile"
+  if [ -f "$BRFILE" ]; then
+    rm "$BRFILE"
+  fi
+  brew bundle dump --file="$BRFILE"
+}
+
+function tmcolors() {
+  for i in {0..255}; do
+      printf "\x1b[38;5;${i}mcolour${i}\x1b[0m\n"
+  done
+}
+
+##########################################
+# Random
+##########################################
+
+# how fast is program
+function speed() {
+  "$1" "$2" | pv > /dev/null
+  # go run main.go | pv > /dev/null
+}

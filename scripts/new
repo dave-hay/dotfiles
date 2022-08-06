@@ -1,0 +1,73 @@
+#!/bin/bash
+
+## make new projects
+
+case $1 in
+    vanilla | vjs)
+      echo "building..."
+      cp -R ~/.dotfiles/templates/html-js-template/* ./
+      echo "done!"
+      ;;
+    next)
+      yarn create next-app ./ --typescript
+      ;;
+    svelte)
+      case $2 in
+        v)
+          yarn create vite ./ --template svelte
+          ;;
+        *)
+          yarn create vite ./ --template svelte-ts
+          ;;
+       esac
+      ;;
+    react)
+      case $2 in
+        vite | v)
+          yarn create vite ./ --template react
+          ;;
+        vite-ts | v-ts)
+          yarn create vite ./ --template react-ts
+          ;;
+        ts)
+          yarn create react-app ./ --template typescript
+          ;;
+        *)
+          yarn create react-app ./
+          ;;
+      esac
+      ;;
+    *)
+      echo "Could not find command $1"
+      echo "try:"
+      echo "- vjs"
+      echo "- react"
+      echo "- next"
+      echo "- svelte"
+esac
+
+
+# function tsserver() {
+#     TEMPTS="$HOME/.dotfiles/node/templates/tsconfig.json"
+#     TEMPJS="$HOME/.dotfiles/node/templates/package.json"
+#     TEMPGIT="$HOME/.dotfiles/node/templates/gitig.txt"
+#     TEMPINDEX="$HOME/.dotfiles/node/templates/tmp.ts"
+
+#     # make folder
+#     mkdir src dist
+
+#     # make base files
+#     touch global.d.ts
+
+#     cp "$TEMPTS" "$PWD/tsconfig.json"
+#     cp "$TEMPJS" "$PWD/package.json"
+#     cp "$TEMPGIT" "$PWD/.gitignore"
+#     cp "$TEMPINDEX" "$PWD/src/index.ts"
+
+
+#     # Production deps
+#     npm i axios body-parser cors dotenv express
+
+#     # dev deps
+#     npm i -D nodemon ts-node @types/express @types/node @types/cors
+# }

@@ -1,0 +1,39 @@
+#!/bin/bash
+
+# tsreact: easy react app creater
+
+# Commands
+#
+
+
+echo "downlowding to current directory..."
+yarn create react-app ./ --template typescript
+# npx create-react-app ./ --template typescript
+
+echo "creating folders"
+rm -rf src && mkdir src src/components
+echo "new folders being addded"
+cp  "$HOME/.dotfiles/templates/tsreact/index.tsx" "$PWD/src/index.tsx"
+cp  "$HOME/.dotfiles/templates/tsreact/App.tsx" "$PWD/src/App.tsx"
+
+case $1 in
+    tailwind | tw)
+        echo "sum nice css coming up"
+        yarn add -D tailwindcss postcss autoprefixer
+        echo "creating config"
+        cp  "$HOME/.dotfiles/templates/tsreact/normaltw.config.js" "$PWD/tailwind.config.js"
+        cp  "$HOME/.dotfiles/templates/tsreact/index.css" "$PWD/src/index.css"
+        echo "dooooone"
+        ;;
+    daisy | d | daisyui )
+        yarn add -D tailwindcss postcss autoprefixer
+        yarn add daisyui
+        echo "creating config"
+        cp  "$HOME/.dotfiles/templates/tsreact/tailwind.config.js" "$PWD/tailwind.config.js"
+        cp  "$HOME/.dotfiles/templates/tsreact/index.css" "$PWD/src/index.css"
+        echo "dooooone"
+        ;;
+      *)
+        touch "$PWD/src/index.css"
+        ;;
+esac

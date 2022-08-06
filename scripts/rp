@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# greppy
+
+case $1 in
+  # word in specified file
+    wf)
+      grep "$2" "$3"
+      echo "greppy to the rescue"
+        ;;
+  # (insensitive) word in specified file
+    wfi)
+      grep -i "$2" "$3"
+      echo "greppy to the rescue"
+        ;;
+  # word in all files in pwd
+    ar)
+    grep -R "$2" "$3"
+      ;;
+esac

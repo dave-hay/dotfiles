@@ -1,0 +1,23 @@
+#!/bin/bash
+
+echo "rustup update"
+echo "rustc --version"
+echo "rustc main.rs -> compile file"
+echo "rustfmt some_file.rs -> format file"
+
+# create new project
+echo "cargo new project_name -> new project"
+
+# build to target/debug/
+echo "cargo build -> build to target/debug"
+
+# compile and run executable
+echo "cargo run -> compile and run"
+
+# check if CAN compile. gut check
+echo "cargo check -> check if you CAN compile"
+
+# build for release to target/release
+echo "cargo build --release -> prod build in target/release"
+
+echo "cargo doc --open -> sick docs"

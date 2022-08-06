@@ -1,0 +1,40 @@
+#!/bin/bash
+
+# ez git commands
+
+case $1 in
+    add | a)
+        git add .
+        git commit -m "$2"
+        echo -n "✅ commited, you all good homie 🫡"
+        ;;
+    push | p)
+        git push -u origin main
+        echo -n "pushin' 🅿️ homie"
+        ;;
+    lb)
+      # last branch
+      git checkout -
+      ;;
+    hub | h)
+        git add .
+        git commit -m "$2"
+        git push -u origin main
+        echo -n "pushin' 🅿️ homie"
+        ;;
+    amen)
+        git add .
+        git commit --amend --no-edit
+        echo -n "amended brother 🙏"
+        ;;
+    reset)
+        git reset
+        git checkout .
+        echo -n "all done"
+        ;;
+    help | -h)
+        echo "dont worry lad 🤙"
+        echo "📝 commands are..."
+        echo "add, push, hub, amen, amend"
+        echo "reset"
+esac
