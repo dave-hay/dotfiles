@@ -12,7 +12,7 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 
 # ez file nav
-alias dot="cd ~/.dotfiles"
+alias dot="cd ~/dotfiles"
 alias dt="cd ~/Desktop"
 alias p="cd ~/code/projects"
 alias gh="cd ~/code/github"
@@ -42,6 +42,10 @@ alias brod="brew outdated"
 alias brug="brew upgrade"
 alias brls="brew list"
 
+# neovim
+alias vimup='brew reinstall neovim'
+alias vimpwd='vim --cmd "set rtp+=$(pwd)"'
+
 # npm
 alias npms='npm start'
 alias npmd='npm run dev'
@@ -52,6 +56,7 @@ alias npmu='npm uninstall'
 alias npmup='npm install npm -g && npm update -g'
 
 # yarn
+alias y='yarn'
 alias ys='yarn start'
 alias yd='yarn dev'
 alias yt='yarn test'
@@ -68,6 +73,6 @@ alias tmrs='tmux rename-session -t'
 alias gor='go run .'
 
 # etc
+alias zshup='omz update' # update oh-my-zsh
 alias gtype='gtypist -w'
-alias vimup='brew reinstall neovim'
 alias lg='lazygit'
