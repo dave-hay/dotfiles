@@ -14,9 +14,10 @@ do
     [ -f "$FILE" ] && source "$FILE"
 done;
 
+autoload -U compinit; compinit
 # Load Pure theme
 autoload -U promptinit; promptinit
-prompt pure
+# prompt pure
 
 # ruby
 eval "$(rbenv init - zsh)"
