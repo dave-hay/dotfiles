@@ -14,4 +14,4 @@
 
 
 export PATH="$HOME/scripts:$PATH"
-export PATH="$HOME/.dotfiles/scripts:$PATH"
+export PATH="$HOME/dotfiles/scripts:$PATH"
