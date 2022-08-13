@@ -24,6 +24,11 @@ function mvdir() {
   mv -R "$1" "$2"
 }
 
+# Prints how many files in a dir
+function dirsize() {
+  find "$1" -type f | wc -l
+}
+
 # Creates new brew dump file. If one exists this will delete it.
 function brdump() {
   BRFILE="$HOME/.dotfiles/Brewfile"
