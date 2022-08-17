@@ -5,7 +5,7 @@
 case $1 in
     vanilla | vjs)
       echo "building..."
-      cp -R ~/.dotfiles/templates/html-js-template/* ./
+      cp -R ~/dotfiles/templates/html-js-template/* ./
       echo "done!"
       ;;
     next)

@@ -24,6 +24,11 @@ function mvdir() {
   mv -R "$1" "$2"
 }
 
+# counts whateva
+function count() {
+  "$1" | wc -l
+}
+
 # Prints how many files in a dir
 function dirsize() {
   find "$1" -type f | wc -l
