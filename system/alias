@@ -53,8 +53,8 @@ alias npmt='npm run test'
 alias npmi='npm install'
 alias npmid='npm install -D'
 alias npmu='npm uninstall'
-alias npmup='npm install npm -g && npm update -g'
-alias npmlts='nvm install-latest-npm'
+# alias npmup='npm install npm -g && npm update -g'
+alias npmup='nvm install-latest-npm'
 alias nvmlts="nvm install 'lts/*' --reinstall-packages-from=default --latest-npm"
 
 # yarn

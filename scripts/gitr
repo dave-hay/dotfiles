@@ -12,10 +12,18 @@ case $1 in
         git push -u origin main
         echo -n "pushin' 🅿️ homie"
         ;;
-    lb)
-      # last branch
-      git checkout -
-      ;;
+      lb)
+        # last branch
+        git checkout -
+        ;;
+      nb)
+        # new branch
+        git checkout -b "$2"
+        ;;
+      db)
+        # delete branch
+        git branch -D "$2"
+        ;;
     hub | h)
         git add .
         git commit -m "$2"
@@ -31,6 +39,10 @@ case $1 in
         git reset
         git checkout .
         echo -n "all done"
+        ;;
+    clear)
+        git rm -rf --cached .
+        echo -n "files cleared"
         ;;
     help | -h)
         echo "dont worry lad 🤙"
