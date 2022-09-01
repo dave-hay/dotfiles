@@ -2,7 +2,7 @@
     link:
       relink: true
 
-- clean: ['~']
+- clean: ["~"]
 
 - link:
     ~/.config/nvim:
@@ -16,4 +16,4 @@
     ~/.zprofile: zprofile
     ~/.zshrc: zshrc
     ~/.oh-my-zsh/themes/zshay.zsh-theme: custom/zshay.zsh-theme
-
+    ~/.condarc: condarc
