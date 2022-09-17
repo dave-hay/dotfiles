@@ -1,6 +1,7 @@
 # David's Dotfiles
 
 ## Configs
+
 [pyenv-virtualenv](https://github.com/pyenv/pyenv-virtualenv)
 Make new venv`pyenv virtualenv <somevenv>`
 
@@ -25,6 +26,8 @@ git clone "ADD REPO"
 # There are better and less manual ways to do this;
 # Investigate install scripts and bootstraping toolsetter
 
+git submodule update --remote dotbot
+
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
 
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
@@ -42,4 +45,10 @@ brew bundle dump
 
 ```shell
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/<version>/install.sh | bash
+```
+
+6. Dotbot
+
+```shell
+git submodule update --remote dotbot
 ```

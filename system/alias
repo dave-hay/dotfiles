@@ -15,7 +15,7 @@ alias ....="cd ../../.."
 alias dot="cd ~/dotfiles"
 alias dt="cd ~/Desktop"
 alias p="cd ~/code/projects"
-alias gh="cd ~/code/github"
+alias hub="cd ~/code/github"
 alias m="cd ~/code/misc"
 alias sc="cd ~/code/misc/scratch"
 alias e="cd ~/code/edu"
@@ -64,6 +64,18 @@ alias yd='yarn dev'
 alias yt='yarn test'
 alias ya='yarn add'
 
+# pnpm
+alias pn="pnpm"
+alias pnls="pnpm ls"
+alias pnup="pnpm update"
+alias pna="pnpm add"
+alias pni="pnpm install"
+alias pnrm="pnpm remove"
+alias pnod="pnpm outdated"
+alias pns="pnpm start"
+alias pnd="pnpm run dev"
+alias pnb="pnpm run build"
+
 # tmux
 alias tm='tmux'
 alias tmls='tmux ls'
@@ -73,6 +85,11 @@ alias tmrs='tmux rename-session -t'
 
 # go
 alias gor='go run .'
+
+# redis
+alias redisstart='brew services start redis'
+alias redisinfo='brew services info redis'
+alias redisstop='brew services stop redis'
 
 # etc
 alias zshup='omz update' # update oh-my-zsh
