@@ -3,7 +3,7 @@
 ## make new projects
 
 case $1 in
-    vanilla | vjs)
+    vanilla | v)
       echo "building..."
       cp -R ~/dotfiles/templates/html-js-template/* ./
       echo "done!"
