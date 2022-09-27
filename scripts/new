@@ -13,11 +13,11 @@ case $1 in
       ;;
     svelte)
       case $2 in
-        v)
-          yarn create vite ./ --template svelte
+        ts)
+          yarn create vite ./ --template svelte-ts
           ;;
         *)
-          yarn create vite ./ --template svelte-ts
+          yarn create vite ./ --template svelte
           ;;
        esac
       ;;
@@ -38,12 +38,18 @@ case $1 in
       esac
       ;;
     *)
-      echo "Could not find command $1"
-      echo "try:"
-      echo "- vjs"
-      echo "- react"
-      echo "- next"
-      echo "- svelte"
+      echo "
+Could not find command $1
+try new ...:
+- vanilla or v
+- next
+- react
+  - ts
+  - vit or v
+  - vite-ts or v-ts
+- svelte
+  - ts
+"
 esac
 
 
