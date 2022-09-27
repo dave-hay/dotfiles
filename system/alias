@@ -39,7 +39,7 @@ alias ld="ls -ld */"   # List in long format, only directories
 alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew' # remove brew doctor errors
 alias brud="brew update; brew outdated;"
 alias brod="brew outdated"
-alias brug="brew upgrade"
+alias brup="brew upgrade"
 alias brls="brew list"
 
 # neovim
@@ -54,7 +54,7 @@ alias npmi='npm install'
 alias npmid='npm install -D'
 alias npmu='npm uninstall'
 # alias npmup='npm install npm -g && npm update -g'
-alias npmup='nvm install-latest-npm'
+alias npmup='nvm install-latest-npm && npm install -g npm@latest'
 alias nvmlts="nvm install 'lts/*' --reinstall-packages-from=default --latest-npm"
 
 # yarn

@@ -72,7 +72,7 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 # Add wisely, as too many plugins slow down shell startup.
 # https://lakur.tech/2021/12/10/fix-slow-zsh-startup-nvm/
 # export NVM_LAZY=2
-plugins=(nvm brew)
+plugins=(brew)
 
 source $ZSH/oh-my-zsh.sh
 
