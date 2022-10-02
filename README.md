@@ -1,54 +1,47 @@
 # David's Dotfiles
 
-## Configs
-
-[pyenv-virtualenv](https://github.com/pyenv/pyenv-virtualenv)
-Make new venv`pyenv virtualenv <somevenv>`
-
 ## Steps to bootstrap a new Mac
 
-1. Install Apple's CLI Tools,
+1. Install Apple's CLI Tools, Homebrew and oh-my-zsh
 
 ```shell
 xcode-select --install
+
+# homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# oh my zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-2. Clone repo into new hidden directory
+2. Clone repo in home directory
 
 ```shell
-# SSH
-git clone "ADD REPO"
+git clone git@github.com:hayitsdavid/dotfiles.git
 ```
 
-3. Create symlinks in the Home dir to real files in repo.
+3. Download dependencies
 
 ```shell
-# There are better and less manual ways to do this;
-# Investigate install scripts and bootstraping toolsetter
+# download homebrew files
+brew bundle --file ~/dotfiles/Brewfile
 
+# dotbot
 git submodule update --remote dotbot
 
-ln -s ~/.dotfiles/.zshrc ~/.zshrc
-
-ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
+# NVM
+# Check https://github.com/nvm-sh/nvm to make sure it's the latest version
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 ```
 
-4. Pass in the Brewfile location...
+4. Run dotbot executable to create symlinks
 
 ```shell
-brew bundle --file ~/.dotfiles/Brewfile
-brew bundle dump
+./install
 ```
 
-5. For node NVM
-   https://github.com/nvm-sh/nvm
+5. DONE! Enjoy
 
-```shell
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/<version>/install.sh | bash
-```
+## Notes  
 
-6. Dotbot
-
-```shell
-git submodule update --remote dotbot
-```
+For Python if you want to create a virtual enviroment use [pyenv-virtualenv](https://github.com/pyenv/pyenv-virtualenv), by running the command `pyenv virtualenv <somevenv>`.
