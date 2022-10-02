@@ -14,13 +14,12 @@ alias ....="cd ../../.."
 # ez file nav
 alias dot="cd ~/dotfiles"
 alias dt="cd ~/Desktop"
-alias p="cd ~/code/projects"
-alias hub="cd ~/code/github"
-alias m="cd ~/code/misc"
+alias proj="cd ~/code/projects"
+alias ghub="cd ~/code/github"
+alias misc="cd ~/code/misc"
 alias sc="cd ~/code/misc/scratch"
-alias e="cd ~/code/edu"
-alias nv="cd ~/.config/nvim"
-alias b="cd ~/books"
+alias edu="cd ~/code/edu"
+alias oss="cd ~/code/oss"
 
 # remap programs
 # alias g="git"
@@ -54,8 +53,8 @@ alias npmi='npm install'
 alias npmid='npm install -D'
 alias npmu='npm uninstall'
 # alias npmup='npm install npm -g && npm update -g'
-alias npmup='nvm install-latest-npm && npm install -g npm@latest'
-alias nvmlts="nvm install 'lts/*' --reinstall-packages-from=default --latest-npm"
+# alias npmup='nvm install-latest-npm && npm install -g npm@latest'
+# alias nvmlts="nvm install 'lts/*' --reinstall-packages-from=default --latest-npm"
 
 # yarn
 alias y='yarn'

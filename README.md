@@ -17,7 +17,7 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 2. Clone repo in home directory
 
 ```shell
-git clone git@github.com:hayitsdavid/dotfiles.git
+git clone --recursive git@github.com:hayitsdavid/dotfiles.git
 ```
 
 3. Download dependencies
@@ -26,12 +26,8 @@ git clone git@github.com:hayitsdavid/dotfiles.git
 # download homebrew files
 brew bundle --file ~/dotfiles/Brewfile
 
-# dotbot
-git submodule update --remote dotbot
-
-# NVM
-# Check https://github.com/nvm-sh/nvm to make sure it's the latest version
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+# Volta - NPM
+curl https://get.volta.sh | bash
 ```
 
 4. Run dotbot executable to create symlinks
@@ -40,8 +36,22 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 ./install
 ```
 
-5. DONE! Enjoy
+5. Neovim
 
-## Notes  
+```shell
+nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
+```
 
-For Python if you want to create a virtual enviroment use [pyenv-virtualenv](https://github.com/pyenv/pyenv-virtualenv), by running the command `pyenv virtualenv <somevenv>`.
+## Notes
+
+- [pyenv](https://github.com/pyenv/pyenv) manages python versions.
+- If you want to create a virtual enviroment use
+  [pyenv-virtualenv](https://github.com/pyenv/pyenv-virtualenv),
+  - `pyenv virtualenv <some_venv>`
+  - `pyenv local <some_venv>`
+
+- [Volta](https://docs.volta.sh/guide/) manages node versions and global
+  packages.
+  - `volta install <package>` = install a global package
+  - `volta list` = show all global packages
+  - `volta pin <node@???> <npm@???>` = set node or npm version in project dir
