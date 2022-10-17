@@ -23,13 +23,8 @@ prompt pure
 eval "$(rbenv init - zsh)"
 export PATH="$HOME/.gem/ruby/3.0.0/bin:$PATH"
 
-# pnpm
-export PNPM_HOME="/Users/davidhay/Library/pnpm"
-export PATH="$PNPM_HOME:$PATH"
-# pnpm end
-
-# fnm
-# eval "$(fnm env --use-on-cd)"
+# asdf
+. /usr/local/opt/asdf/libexec/asdf.sh
 
 # Go
 export GOPATH=$HOME/go
@@ -83,3 +78,8 @@ unset __conda_setup
 # Volta = Node version manager
 # export VOLTA_HOME="$HOME/.volta"
 # export PATH="$VOLTA_HOME/bin:$PATH"
+# pnpm
+# export PNPM_HOME="/Users/davidhay/Library/pnpm"
+# export PATH="$PNPM_HOME:$PATH"
+# fnm
+# eval "$(fnm env --use-on-cd)"
