@@ -66,10 +66,11 @@ alias ya='yarn add'
 # pnpm
 alias pn="pnpm"
 alias pnls="pnpm ls"
-alias pnup="pnpm update"
+alias pnup="pnpm add -g pnpm"
+alias pnud="pnpm update"
 alias pna="pnpm add"
 alias pni="pnpm install"
-alias pnrm="pnpm remove"
+alias pnr="pnpm remove"
 alias pnod="pnpm outdated"
 alias pns="pnpm start"
 alias pnd="pnpm run dev"

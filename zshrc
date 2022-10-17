@@ -23,9 +23,20 @@ prompt pure
 eval "$(rbenv init - zsh)"
 export PATH="$HOME/.gem/ruby/3.0.0/bin:$PATH"
 
-# Volta = Node version manager
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
+# pnpm
+export PNPM_HOME="/Users/davidhay/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
+
+# fnm
+# eval "$(fnm env --use-on-cd)"
+
+# Go
+export GOPATH=$HOME/go
+export GOROOT=/usr/local/opt/go/libexec
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin
+export PATH="$PATH:$(go env GOROOT)/misc/wasm"
 
 # Python
 export PYENV_ROOT="$HOME/.pyenv"
@@ -66,12 +77,9 @@ unset __conda_setup
 # export BUN_INSTALL="$HOME/.bun"
 # export PATH="$BUN_INSTALL/bin:$PATH"
 #
-# Go
-# export GOPATH=$HOME/go
-# export GOROOT=/usr/local/opt/go/libexec
-# export PATH=$PATH:$GOPATH/bin
-# export PATH=$PATH:$GOROOT/bin
-# export PATH="$PATH:$(go env GOROOT)/misc/wasm"
-#
 # haskell
 # [ -f "/Users/davidhay/.ghcup/env" ] && source "/Users/davidhay/.ghcup/env" # ghcup-env
+#
+# Volta = Node version manager
+# export VOLTA_HOME="$HOME/.volta"
+# export PATH="$VOLTA_HOME/bin:$PATH"
