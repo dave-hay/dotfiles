@@ -86,6 +86,9 @@ alias tmrs='tmux rename-session -t'
 # go
 alias gor='go run .'
 
+# asdf
+asdfup='asdf plugin update --all'
+
 # redis
 alias redisstart='brew services start redis'
 alias redisinfo='brew services info redis'
