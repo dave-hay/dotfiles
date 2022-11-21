@@ -25,13 +25,7 @@ export PATH="$HOME/.gem/ruby/3.0.0/bin:$PATH"
 
 # asdf
 . /usr/local/opt/asdf/libexec/asdf.sh
-
-# Go
-export GOPATH=$HOME/go
-export GOROOT=/usr/local/opt/go/libexec
-export PATH=$PATH:$GOPATH/bin
-export PATH=$PATH:$GOROOT/bin
-export PATH="$PATH:$(go env GOROOT)/misc/wasm"
+. ~/.asdf/plugins/java/set-java-home.zsh
 
 # Python
 export PYENV_ROOT="$HOME/.pyenv"
@@ -43,10 +37,6 @@ export PATH="$HOME/.poetry/bin:$PATH"
 
 # emacs
 PATH="$HOME/.emacs.d/bin:$PATH"
-
-# Java
-export JAVA_HOME=$(/usr/libexec/java_home)
-
 
 # conda config --set auto_activate_base false
 # >>> conda initialize >>>
@@ -81,5 +71,11 @@ unset __conda_setup
 # pnpm
 # export PNPM_HOME="/Users/davidhay/Library/pnpm"
 # export PATH="$PNPM_HOME:$PATH"
-# fnm
-# eval "$(fnm env --use-on-cd)"
+# Go
+# export GOPATH=$HOME/go
+# export GOROOT=/usr/local/opt/go/libexec
+# export PATH=$PATH:$GOPATH/bin
+# export PATH=$PATH:$GOROOT/bin
+# export PATH="$PATH:$(go env GOROOT)/misc/wasm"
+# Java
+# export JAVA_HOME=$(/usr/libexec/java_home)
