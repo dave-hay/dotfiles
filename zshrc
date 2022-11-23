@@ -53,6 +53,8 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+# sapling
+ulimit -n 1048576 1048576
 
 ####################
 # Not using currently
@@ -64,13 +66,6 @@ unset __conda_setup
 #
 # haskell
 # [ -f "/Users/davidhay/.ghcup/env" ] && source "/Users/davidhay/.ghcup/env" # ghcup-env
-#
-# Volta = Node version manager
-# export VOLTA_HOME="$HOME/.volta"
-# export PATH="$VOLTA_HOME/bin:$PATH"
-# pnpm
-# export PNPM_HOME="/Users/davidhay/Library/pnpm"
-# export PATH="$PNPM_HOME:$PATH"
 # Go
 # export GOPATH=$HOME/go
 # export GOROOT=/usr/local/opt/go/libexec

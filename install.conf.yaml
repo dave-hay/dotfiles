@@ -17,3 +17,4 @@
     ~/.zshrc: zshrc
     ~/.oh-my-zsh/themes/zshay.zsh-theme: custom/zshay.zsh-theme
     ~/.condarc: condarc
+    ~/.tool-versions: tool-versions
