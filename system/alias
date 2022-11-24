@@ -35,11 +35,14 @@ alias l="ls -la"       # List in long format, include dotfiles
 alias ld="ls -ld */"   # List in long format, only directories
 
 # Homebrew
-alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew' # remove brew doctor errors
 alias brud="brew update; brew outdated;"
 alias brod="brew outdated"
 alias brup="brew upgrade"
 alias brls="brew list"
+alias brun='brew uninstall'
+alias brin='brew install'
+alias brcl='brew cleanup'
+alias brar='brew autoremove'
 
 # neovim
 alias vimup='brew reinstall neovim'
