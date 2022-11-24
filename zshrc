@@ -1,4 +1,4 @@
-#brew uninstall --force ruby-builbrew uninstall --force ruby-builbrew uninstall --force ruby-builbrew uninstall --force ruby-builbrew uninstall --force ruby-buil If you want to diagnose .zshrc loadtime...
+# If you want to diagnose .zshrc loadtime...
 # zmodload zsh/zprof
 # ======= configs go here =======
 # zprof
@@ -31,8 +31,3 @@ PATH="$HOME/.emacs.d/bin:$PATH"
 
 # sapling
 ulimit -n 1048576 1048576
-
-# haskell
-# [ -f "/Users/davidhay/.ghcup/env" ] && source "/Users/davidhay/.ghcup/env" # ghcup-env
-# Go
-# export PATH="$PATH:$(go env GOROOT)/misc/wasm"
