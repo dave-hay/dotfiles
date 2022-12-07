@@ -19,3 +19,4 @@
     ~/.condarc: condarc
     ~/.tool-versions: tool-versions
     ~/.gitignore: gitignore-global
+    ~/.default-npm-packages: default-npm-packages
