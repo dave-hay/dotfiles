@@ -47,6 +47,7 @@ alias brar='brew autoremove'
 # neovim
 alias vimup='brew reinstall neovim'
 alias vimpwd='vim --cmd "set rtp+=$(pwd)"'
+alias packerup="nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'"
 
 # npm
 alias npms='npm start'
@@ -56,8 +57,6 @@ alias npmi='npm install'
 alias npmid='npm install -D'
 alias npmu='npm uninstall'
 alias npmup='npm install -g npm@latest && npm update -g'
-# alias npmup='nvm install-latest-npm && npm install -g npm@latest'
-# alias nvmlts="nvm install 'lts/*' --reinstall-packages-from=default --latest-npm"
 
 # yarn
 alias y='yarn'
@@ -65,6 +64,7 @@ alias ys='yarn start'
 alias yd='yarn dev'
 alias yt='yarn test'
 alias ya='yarn add'
+alias yad='yarn add -D'
 
 # pnpm
 alias pn="pnpm"
@@ -90,7 +90,7 @@ alias tmrs='tmux rename-session -t'
 alias gor='go run .'
 
 # asdf
-asdfup='asdf plugin update --all'
+alias asdfup='asdf plugin update --all'
 
 # redis
 alias redisstart='brew services start redis'
