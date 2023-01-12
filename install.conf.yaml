@@ -15,6 +15,7 @@
     ~/.ideavimrc: ideavimrc
     ~/.zprofile: zprofile
     ~/.zshrc: zshrc
+    ~/.zshenv: zshenv
     ~/.condarc: condarc
     ~/.tool-versions: tool-versions
     ~/.gitignore: gitignore-global
