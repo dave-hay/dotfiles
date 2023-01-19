@@ -29,7 +29,7 @@ alias py="python3"
 
 # unix commands
 alias cl="clear"
-alias restart="exec zsh -l"
+alias restart="exec zsh"
 alias deldir="rm -rf"
 alias l="ls -la"       # List in long format, include dotfiles
 alias ld="ls -ld */"   # List in long format, only directories
