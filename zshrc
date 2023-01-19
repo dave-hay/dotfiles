@@ -15,6 +15,7 @@ do
 done;
 
 # Load Pure theme
+fpath+=~/.zfunc
 autoload -U compinit; compinit
 autoload -U promptinit; promptinit
 prompt pure
@@ -37,3 +38,7 @@ export PATH="$PATH:$GOPATH/bin"
 ulimit -n 1048576 1048576
 
 . /usr/local/opt/asdf/libexec/asdf.sh
+
+export WASMTIME_HOME="$HOME/.wasmtime"
+
+export PATH="$WASMTIME_HOME/bin:$PATH"
