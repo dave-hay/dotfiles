@@ -50,6 +50,8 @@ alias vimpwd='vim --cmd "set rtp+=$(pwd)"'
 alias packerup="nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'"
 
 # npm
+alias np='npm'
+alias npr='npm run'
 alias npms='npm start'
 alias npmd='npm run dev'
 alias npmt='npm run test'
