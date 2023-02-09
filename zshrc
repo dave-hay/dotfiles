@@ -42,3 +42,4 @@ ulimit -n 1048576 1048576
 export WASMTIME_HOME="$HOME/.wasmtime"
 
 export PATH="$WASMTIME_HOME/bin:$PATH"
+# source /opt/intel/oneapi/setvars.sh > /dev/null
