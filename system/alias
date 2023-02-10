@@ -94,6 +94,12 @@ alias gor='go run .'
 # asdf
 alias asdfup='asdf plugin update --all'
 
+# rust
+alias cr='cargo run'
+alias cb='cargo build'
+alias ca='cargo add'
+
+
 # redis
 alias redisstart='brew services start redis'
 alias redisinfo='brew services info redis'
