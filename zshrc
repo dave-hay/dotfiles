@@ -31,8 +31,8 @@ export PATH="/usr/local/sbin:$PATH"
 PATH="$HOME/.emacs.d/bin:$PATH"
 
 # go
-export GOPATH="$HOME/go"
-export PATH="$PATH:$GOPATH/bin"
+# export GOPATH="$HOME/go"
+# export PATH="$PATH:$GOPATH/bin"
 
 # sapling
 ulimit -n 1048576 1048576
