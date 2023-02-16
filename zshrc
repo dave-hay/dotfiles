@@ -14,6 +14,11 @@ do
     [ -f "$FILE" ] && source "$FILE"
 done;
 
+# history options
+export HISTFILE=~/.zsh_history
+export HISTSIZE=10000
+export SAVEHIST=10000
+
 # Load Pure theme
 fpath+=~/.zfunc
 autoload -U compinit; compinit
@@ -31,6 +36,9 @@ export PATH="/usr/local/sbin:$PATH"
 PATH="$HOME/.emacs.d/bin:$PATH"
 
 # go
+export HISTFILE=~/.zsh_history
+export HISTSIZE=10000
+export SAVEHIST=10000
 # export GOPATH="$HOME/go"
 # export PATH="$PATH:$GOPATH/bin"
 

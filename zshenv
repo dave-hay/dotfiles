@@ -1,9 +1,6 @@
 . "$HOME/.cargo/env"
 export EDITOR="nvim"
 export VISUAL="nvim"
-export HISTFILE=~/.zsh_history
-export HISTSIZE=10000
-export SAVEHIST=10000
 bindkey -v
 bindkey '^R' history-incremental-search-backward
 bindkey -v
