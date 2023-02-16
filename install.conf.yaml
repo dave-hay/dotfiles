@@ -11,6 +11,9 @@
     ~/.config/karabiner/karabiner.json:
       create: true
       path: config/karabiner/karabiner.json
+    ~/.hammerspoon:
+      create: true
+      path: hammerspoon
     ~/.tmux.conf: tmux.conf
     ~/.ideavimrc: ideavimrc
     ~/.zprofile: zprofile
