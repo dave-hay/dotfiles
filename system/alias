@@ -26,6 +26,7 @@ alias oss="cd ~/code/oss"
 alias vim="nvim"
 alias python="python3"
 alias py="python3"
+alias pip="pip3"
 
 # unix commands
 alias cl="clear"
@@ -108,3 +109,4 @@ alias redisstop='brew services stop redis'
 alias zshup='omz update' # update oh-my-zsh
 alias gtype='gtypist -w'
 alias lg='lazygit'
+alias see='tree --gitignore'
