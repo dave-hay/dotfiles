@@ -32,6 +32,13 @@ prompt pure
 
 export PATH="/usr/local/sbin:$PATH"
 
+export GOPATH="$HOME/.asdf/installs/golang/1.20/packages"
+export GOROOT="$HOME/.asdf/installs/golang/1.20/go"
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin
+# export GOBIN=$(go env GOBIN)
+# export PATH=$PATH:$GOBIN
+
 # emacs
 PATH="$HOME/.emacs.d/bin:$PATH"
 
