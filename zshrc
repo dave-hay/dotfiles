@@ -32,6 +32,7 @@ prompt pure
 
 export PATH="/usr/local/sbin:$PATH"
 
+# go
 export GOPATH="$HOME/.asdf/installs/golang/1.20/packages"
 export GOROOT="$HOME/.asdf/installs/golang/1.20/go"
 export PATH=$PATH:$GOPATH/bin
@@ -42,17 +43,11 @@ export PATH=$PATH:$GOROOT/bin
 # emacs
 PATH="$HOME/.emacs.d/bin:$PATH"
 
-# go
-export HISTFILE=~/.zsh_history
-export HISTSIZE=10000
-export SAVEHIST=10000
-# export GOPATH="$HOME/go"
-# export PATH="$PATH:$GOPATH/bin"
+# /usr/local/share/zsh/site-functions # for completions
+
 
 # sapling
 ulimit -n 1048576 1048576
-
-. /usr/local/opt/asdf/libexec/asdf.sh
 
 export WASMTIME_HOME="$HOME/.wasmtime"
 
