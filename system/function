@@ -58,6 +58,11 @@ function allup() {
   packerup
 }
 
+# use "${var:?}" https://www.shellcheck.net/wiki/SC2115
+function godel(){
+  echo "${GOPATH:?}/bin/${1:?}"
+}
+
 ##########################################
 # Random
 ##########################################
