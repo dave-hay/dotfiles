@@ -28,7 +28,7 @@ prompt pure
 
 # asdf
 . /usr/local/opt/asdf/libexec/asdf.sh
-. ~/.asdf/plugins/java/set-java-home.zsh
+# . ~/.asdf/plugins/java/set-java-home.zsh
 
 export PATH="/usr/local/sbin:$PATH"
 
@@ -53,3 +53,7 @@ export WASMTIME_HOME="$HOME/.wasmtime"
 
 export PATH="$WASMTIME_HOME/bin:$PATH"
 # source /opt/intel/oneapi/setvars.sh > /dev/null
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
