@@ -31,8 +31,13 @@ function count() {
 
 # Prints how many files in a dir
 function dirsize() {
-  find "$1" -type f | wc -l
+  du -sh "$1"
 }
+
+# Prints how many files in a dir
+# function dirsize() {
+#   find "$1" -type f | wc -l
+# }
 
 # Creates new brew dump file. If one exists this will delete it.
 function brdump() {
