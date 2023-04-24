@@ -28,7 +28,7 @@ alias python="python3"
 alias py="python3"
 alias pip="pip3"
 alias pyactivate='. env/bin/activate'
-alias pynewenv='python3 -m venv env'
+alias pyenv='python3 -m venv env'
 
 # unix commands
 alias cl="clear"
