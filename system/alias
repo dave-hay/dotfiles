@@ -19,16 +19,16 @@ alias ghub="cd ~/code/github"
 alias misc="cd ~/code/misc"
 alias sc="cd ~/code/misc/scratch"
 alias edu="cd ~/code/edu"
-alias oss="cd ~/code/oss"
 
-# remap programs
-# alias g="git"
-alias vim="nvim"
+# python
 alias python="python3"
 alias py="python3"
 alias pip="pip3"
 alias pyactivate='. env/bin/activate'
 alias pyenv='python3 -m venv env'
+alias pysrc='source "venv/bin/activate"'
+alias pypy='pypy3'
+alias pypypip='pip_pypy3 install'
 
 # unix commands
 alias cl="clear"
@@ -47,6 +47,7 @@ alias brcl='brew cleanup'
 alias brar='brew autoremove'
 
 # neovim
+alias vim="nvim"
 alias vimup='brew reinstall neovim'
 alias vimpwd='vim --cmd "set rtp+=$(pwd)"'
 alias packerup="nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'"

@@ -34,6 +34,16 @@ function dirsize() {
   du -sh "$1"
 }
 
+function pyvenv() {
+  python3 -m venv venv && \
+  source "venv/bin/activate"
+}
+
+function pypyvenv() {
+  pypy3 -m venv venv && \
+  source "venv/bin/activate"
+}
+
 # Prints how many files in a dir
 # function dirsize() {
 #   find "$1" -type f | wc -l
