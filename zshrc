@@ -32,6 +32,9 @@ prompt pure
 
 export PATH="/usr/local/sbin:$PATH"
 
+# direnv
+eval "$(direnv hook zsh)"
+
 # go
 export GOPATH="$HOME/.asdf/installs/golang/1.20/packages"
 export GOROOT="$HOME/.asdf/installs/golang/1.20/go"
