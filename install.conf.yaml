@@ -11,6 +11,9 @@
     ~/.config/karabiner/karabiner.json:
       create: true
       path: config/karabiner/karabiner.json
+    ~/.config/rtx/config.toml:
+      create: true
+      path: config/rtx/config.toml
     ~/.hammerspoon:
       create: true
       path: hammerspoon
