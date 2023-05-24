@@ -67,9 +67,6 @@ unset __conda_setup
 # [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 ##### OLD #####
-# asdf
-# . /usr/local/opt/asdf/libexec/asdf.sh
-# . ~/.asdf/plugins/java/set-java-home.zsh
 
 # go
 # export GOPATH="$HOME/.asdf/installs/golang/1.20/packages"

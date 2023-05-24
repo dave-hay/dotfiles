@@ -67,7 +67,6 @@ function tmcolors() {
 function allup() {
   brud
   brup
-  asdfup
   npmup
   vimup
   packerup
