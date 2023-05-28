@@ -34,6 +34,10 @@ function dirsize() {
   du -sh "$1"
 }
 
+function rtxpy() {
+  printf "[tools]\n python = { version='3.10', virtualenv='.venv' }\n" >> .rtx.toml
+}
+
 function pyvenv() {
   python3 -m venv venv && \
   source "venv/bin/activate"
