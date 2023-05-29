@@ -73,12 +73,12 @@ alias yad='yarn add -D'
 
 # pnpm
 alias pn="pnpm"
+alias pna="pnpm add" # npm i
+alias pnr="pnpm remove"
 alias pnls="pnpm ls"
 alias pnup="pnpm add -g pnpm"
 alias pnud="pnpm update"
-alias pna="pnpm add"
 alias pni="pnpm install"
-alias pnr="pnpm remove"
 alias pnod="pnpm outdated"
 alias pns="pnpm start"
 alias pnd="pnpm run dev"
