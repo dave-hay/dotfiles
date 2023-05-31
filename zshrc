@@ -53,10 +53,10 @@ __conda_setup="$('~/mambaforge/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "~/mambaforge/etc/profile.d/conda.sh" ]; then
-        . "~/mambaforge/etc/profile.d/conda.sh"
+    if [ -f ~/mambaforge/etc/profile.d/conda.sh ]; then
+        . ~/mambaforge/etc/profile.d/conda.sh
     else
-        export PATH="~/mambaforge/bin:$PATH"
+        export PATH=~/mambaforge/bin:$PATH
     fi
 fi
 unset __conda_setup
