@@ -1,5 +1,8 @@
-eslint-plugin-testing-library
+autocannon
 eslint
+eslint-plugin-testing-library
+npm-check
+npm-check-updates
 pnpm
 prettier
 serve
@@ -7,4 +10,3 @@ ts-node
 typescript
 vercel
 yarn
-npm-check-updates
