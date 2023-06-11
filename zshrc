@@ -25,6 +25,9 @@ autoload -U compinit; compinit
 autoload -U promptinit; promptinit
 prompt pure
 
+# vivid LS_COLORS
+export LS_COLORS="$(vivid generate one-dark)"
+
 # rtx
 eval "$(/usr/local/bin/rtx activate zsh)"
 
@@ -61,6 +64,7 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 # export SDKMAN_DIR="$HOME/.sdkman"

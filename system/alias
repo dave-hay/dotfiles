@@ -31,6 +31,7 @@ alias pypy='pypy3'
 alias pypypip='pip_pypy3 install'
 
 # unix commands
+alias ls="gls --color"
 alias cl="clear"
 alias restart="exec zsh"
 alias deldir="rm -rf"

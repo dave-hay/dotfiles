@@ -36,6 +36,11 @@ brew bundle --file ~/dotfiles/Brewfile
 nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
 ```
 
+## Tools
+
+- ripgrep
+- LS_COLORS configure with [vivid](https://github.com/sharkdp/vivid)
+
 ## Notes
 
 Order of zsh files
