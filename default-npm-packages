@@ -1,12 +1,14 @@
 autocannon
 eslint
 eslint-plugin-testing-library
+jest
 npm-check
 npm-check-updates
 pnpm
 prettier
 serve
 ts-node
+turbo
 typescript
 vercel
 yarn
