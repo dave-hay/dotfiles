@@ -70,12 +70,15 @@ alias ys='yarn start'
 alias yd='yarn dev'
 alias yt='yarn test'
 alias ya='yarn add'
+alias yr='yarn remove'
 alias yad='yarn add -D'
 
 # pnpm
 alias pn="pnpm"
 alias pna="pnpm add" # npm i
-alias pnr="pnpm remove"
+alias pnad="pnpm add -D"
+alias pnrm="pnpm remove"
+alias pnt="pnpm test"
 alias pnls="pnpm ls"
 alias pnup="pnpm add -g pnpm"
 alias pnud="pnpm update"
@@ -103,7 +106,6 @@ alias cr='cargo run'
 alias cb='cargo build'
 alias ca='cargo add'
 
-
 # redis
 alias redisstart='brew services start redis'
 alias redisinfo='brew services info redis'
@@ -114,3 +116,4 @@ alias zshup='omz update' # update oh-my-zsh
 alias gtype='gtypist -w'
 alias lg='lazygit'
 alias see='tree --gitignore'
+alias ndoe='node'
