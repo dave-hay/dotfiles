@@ -98,9 +98,6 @@ alias tmrs='tmux rename-session -t'
 # go
 alias gor='go run .'
 
-# asdf
-alias asdfup='asdf plugin update --all'
-
 # rust
 alias cr='cargo run'
 alias cb='cargo build'

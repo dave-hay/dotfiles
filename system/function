@@ -34,6 +34,26 @@ function dirsize() {
   du -sh "$1"
 }
 
+# git
+ga() {
+  git add .
+  git commit -m "$1"
+  echo -n "✅ commited, you all good homie 🫡"
+}
+
+gp() {
+  git push -u origin main
+  echo -n "pushin' 🅿️ homie"
+}
+
+am() {
+  git add .
+  git commit --amend --no-edit
+  echo -n "amended brother 🙏"
+}
+
+# languages
+
 function rtxpy() {
   printf "[tools]\n python = { version='3.10', virtualenv='.venv' }\n" >> .rtx.toml
 }
