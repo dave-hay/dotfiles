@@ -36,6 +36,7 @@ alias cl="clear"
 alias restart="exec zsh"
 alias deldir="rm -rf"
 alias l="ls -la"       # List in long format, include dotfiles
+alias cat="bat"
 
 # Homebrew
 alias brud="brew update; brew outdated;"
@@ -114,3 +115,5 @@ alias gtype='gtypist -w'
 alias lg='lazygit'
 alias see='tree --gitignore'
 alias ndoe='node'
+alias pnc='pnpm npm-check'
+alias pncu='pnpm npm-check -u'
