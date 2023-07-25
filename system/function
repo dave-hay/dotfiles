@@ -75,7 +75,7 @@ function pypyvenv() {
 
 # Creates new brew dump file. If one exists this will delete it.
 function brdump() {
-  BRFILE="$HOME/.dotfiles/Brewfile"
+  BRFILE="$HOME/dotfiles/Brewfile"
   if [ -f "$BRFILE" ]; then
     rm "$BRFILE"
   fi
