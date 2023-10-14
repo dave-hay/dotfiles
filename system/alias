@@ -89,6 +89,7 @@ alias pnod="pnpm outdated"
 alias pns="pnpm start"
 alias pnd="pnpm run dev"
 alias pnb="pnpm run build"
+alias pnx="pnpm dlx"
 
 # tmux
 alias tm='tmux'
