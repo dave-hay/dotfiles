@@ -90,6 +90,7 @@ alias pns="pnpm start"
 alias pnd="pnpm run dev"
 alias pnb="pnpm run build"
 alias pnx="pnpm dlx"
+alias pnl="pnpm lint"
 
 # tmux
 alias tm='tmux'
