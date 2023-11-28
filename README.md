@@ -14,7 +14,7 @@ xcode-select --install
 2. Clone repo in home directory
 
 ```shell
-git clone --recursive git@github.com:hayitsdavid/dotfiles.git
+git clone --recursive https://github.com/dave-hay/dotfiles.git
 ```
 
 3. Download dependencies
