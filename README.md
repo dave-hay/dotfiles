@@ -2,22 +2,25 @@
 
 ## Steps to bootstrap a new Mac
 
-1. Install Apple's CLI Tools, Homebrew and oh-my-zsh
+1. Install Apple's CLI Tools and Homebrew
 
 ```shell
 xcode-select --install
+```
 
+```shell
 # homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-2. Clone repo in home directory
+2. Clone dotfile repo while in home directory
 
 ```shell
 git clone --recursive https://github.com/dave-hay/dotfiles.git
+cd dotfiles
 ```
 
-3. Download dependencies
+4. Download dependencies from Homebrew
 
 ```shell
 # download homebrew files
@@ -30,7 +33,13 @@ brew bundle --file ~/dotfiles/Brewfile
 ./install
 ```
 
-5. Neovim
+5. Install languages
+
+```shell
+rtx install
+```
+
+6. Install Neovim dependencies
 
 ```shell
 nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
@@ -38,7 +47,7 @@ nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
 
 ## Notes
 
-Order of zsh files
+Order of zsh file loading
 
 ```shell
 $ZDOTDIR/.zshenv
