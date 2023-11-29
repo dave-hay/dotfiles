@@ -34,3 +34,5 @@ export PATH="/usr/local/sbin:$PATH"
 
 # sapling
 # ulimit -n 1048576 1048576
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

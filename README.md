@@ -39,6 +39,12 @@ brew bundle --file ~/dotfiles/Brewfile
 rtx install
 ```
 
+6. To install useful key bindings and fuzzy completion
+
+```shell
+$(brew --prefix)/opt/fzf/install
+```
+
 6. Install Neovim dependencies
 
 ```shell
