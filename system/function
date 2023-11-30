@@ -36,12 +36,20 @@ function dirsize() {
 
 function pyvenv() {
   python3 -m venv venv && \
-  source "venv/bin/activate"
+    source "venv/bin/activate"
+}
+
+
+function rtxvenv() {
+  cat << EOF >> .rtx.toml
+[tools]
+python = {version='3.10', virtualenv='.venv'}
+EOF
 }
 
 function pypyvenv() {
   pypy3 -m venv venv && \
-  source "venv/bin/activate"
+    source "venv/bin/activate"
 }
 
 # Prints how many files in a dir
@@ -60,7 +68,7 @@ function brdump() {
 
 function tmcolors() {
   for i in {0..255}; do
-      printf "\x1b[38;5;${i}mcolour${i}\x1b[0m\n"
+    printf "\x1b[38;5;${i}mcolour${i}\x1b[0m\n"
   done
 }
 
