@@ -43,23 +43,23 @@ eval "$(/usr/local/bin/rtx activate zsh)"
 export PATH="/usr/local/sbin:$PATH"
 
 # direnv
-eval "$(direnv hook zsh)"
+# eval "$(direnv hook zsh)"
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # emacs
-PATH="$HOME/.emacs.d/bin:$PATH"
+# PATH="$HOME/.emacs.d/bin:$PATH"
 
 # sapling
-ulimit -n 1048576 1048576
+# ulimit -n 1048576 1048576
 
-export WASMTIME_HOME="$HOME/.wasmtime"
+# export WASMTIME_HOME="$HOME/.wasmtime"
 
-export PATH="$WASMTIME_HOME/bin:$PATH"
+# export PATH="$WASMTIME_HOME/bin:$PATH"
 
 # bun completions
-[ -s "~/.bun/_bun" ] && source "~/.bun/_bun"
+# [ -s "~/.bun/_bun" ] && source "~/.bun/_bun"
 
 # autojump
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
