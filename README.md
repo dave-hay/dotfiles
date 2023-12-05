@@ -14,7 +14,7 @@ xcode-select --install
 2. Clone repo in home directory
 
 ```shell
-git clone --recursive git@github.com:hayitsdavid/dotfiles.git
+git clone --recursive git@github.com:dave-hay/dotfiles.git
 ```
 
 3. Download dependencies
@@ -36,10 +36,42 @@ brew bundle --file ~/dotfiles/Brewfile
 nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
 ```
 
-## Tools
+## Packages
 
+### Tools
+
+- Language manager [rtx](https://github.com/jdx/rtx)
 - ripgrep
+- fd
+- ffmpeg
+- fzf
+- gawk
+- gh
+- git
+- git-lfs
+- lazygit
+- neovim
+- pv
+- tree
+
+### Themes
+
+- Theme [pure](https://github.com/sindresorhus/pure)
 - LS_COLORS configure with [vivid](https://github.com/sharkdp/vivid)
+  - brew install coreutils
+  - alias ls="gls --color"
+
+### Applications (casks)
+
+- Anki
+- Brave Browser
+- Discord
+- Figma
+- iTerm2
+- Karabiner
+- Rectangle
+- Notion
+- VS Code
 
 ## Notes
 
