@@ -18,6 +18,15 @@ done;
 export HISTFILE=~/.zsh_history
 export HISTSIZE=10000
 export SAVEHIST=10000
+setopt APPEND_HISTORY  # Append history to the history file, rather than replace it
+setopt EXTENDED_HISTORY  # Save each command's timestamp
+setopt INC_APPEND_HISTORY  # Immediately append to the history file, not just when a terminal exits
+setopt SHARE_HISTORY  # Share history across terminals
+setopt HIST_FIND_NO_DUPS     # no duplicate entries
+setopt HIST_IGNORE_ALL_DUPS  # ignore duplicates
+setopt HIST_IGNORE_SPACE     # ignore lines starting with space
+setopt HIST_SAVE_NO_DUPS     # don't write duplicate lines to the history file
+setopt HIST_REDUCE_BLANKS    # remove superfluous blanks before recording entry
 
 # Load Pure theme
 fpath+=~/.zfunc
@@ -36,6 +45,8 @@ export PATH="/usr/local/sbin:$PATH"
 # direnv
 eval "$(direnv hook zsh)"
 
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # emacs
 PATH="$HOME/.emacs.d/bin:$PATH"
@@ -49,6 +60,9 @@ export PATH="$WASMTIME_HOME/bin:$PATH"
 
 # bun completions
 [ -s "~/.bun/_bun" ] && source "~/.bun/_bun"
+
+# autojump
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!

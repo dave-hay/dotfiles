@@ -4,6 +4,11 @@
 # System
 ##########################################
 
+# search current directory
+function ff(){
+  l | rg "$1"
+}
+
 # Create a new directory and enter it
 function mk() {
   mkdir -p "$@" && cd "$@" || exit
