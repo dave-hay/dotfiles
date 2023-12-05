@@ -49,6 +49,7 @@ $(brew --prefix)/opt/fzf/install
 
 ```shell
 nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
+nvim --headless -c "MasonInstall lua-language-server rust-analyzer" -c qall
 ```
 
 ## Notes
