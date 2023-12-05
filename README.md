@@ -34,6 +34,8 @@ brew bundle --file ~/dotfiles/Brewfile
 
 ```shell
 nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
+nvim --headless -c "MasonInstall lua-language-server bash-language-server html-lsp typescript-language-server" -c qall
+nvim --headless -c "MasonInstall beautysh black prettier prettierd stylua" -c qall
 ```
 
 ## Packages
