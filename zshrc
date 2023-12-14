@@ -6,12 +6,12 @@
 # Load all dotfiles in system
 for DOTFILE in `find $HOME/dotfiles/system`;
 do
-    [ -f "$DOTFILE" ] && source "$DOTFILE"
+  [ -f "$DOTFILE" ] && source "$DOTFILE"
 done;
 
 for FILE in `find $HOME/dotfiles/private`;
 do
-    [ -f "$FILE" ] && source "$FILE"
+  [ -f "$FILE" ] && source "$FILE"
 done;
 
 # history options
@@ -29,6 +29,7 @@ setopt HIST_SAVE_NO_DUPS     # don't write duplicate lines to the history file
 setopt HIST_REDUCE_BLANKS    # remove superfluous blanks before recording entry
 
 # Load Pure theme
+fpath=(~/.zsh/completion $fpath)
 fpath+=~/.zfunc
 autoload -U compinit; compinit
 autoload -U promptinit; promptinit
@@ -66,17 +67,17 @@ export PATH="/usr/local/sbin:$PATH"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('~/mambaforge/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f ~/mambaforge/etc/profile.d/conda.sh ]; then
-        . ~/mambaforge/etc/profile.d/conda.sh
-    else
-        export PATH=~/mambaforge/bin:$PATH
-    fi
-fi
-unset __conda_setup
+# __conda_setup="$('~/mambaforge/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+# if [ $? -eq 0 ]; then
+#   eval "$__conda_setup"
+# else
+#   if [ -f ~/mambaforge/etc/profile.d/conda.sh ]; then
+#     . ~/mambaforge/etc/profile.d/conda.sh
+#   else
+#     export PATH=~/mambaforge/bin:$PATH
+#   fi
+# fi
+# unset __conda_setup
 # <<< conda initialize <<<
 
 
