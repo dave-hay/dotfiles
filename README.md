@@ -38,6 +38,18 @@ nvim --headless -c "MasonInstall lua-language-server bash-language-server html-l
 nvim --headless -c "MasonInstall beautysh black prettier prettierd stylua" -c qall
 ```
 
+6. Tmux
+
+While in tmux run below to set up plugins.
+
+```shell
+# reload config file
+C-a + r
+
+# Install plugins
+C-a + I
+```
+
 ## Packages
 
 ### Tools
