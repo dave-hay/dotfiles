@@ -42,6 +42,7 @@ export LS_COLORS="$(vivid generate one-dark)"
 eval "$(/usr/local/bin/rtx activate zsh)"
 
 export PATH="/usr/local/sbin:$PATH"
+export PATH="$HOME/dotfiles/scripts:$PATH"
 
 # direnv
 # eval "$(direnv hook zsh)"
