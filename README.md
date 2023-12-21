@@ -68,6 +68,7 @@ C-a + I
 - pv
 - tree
 - See lines of code with [tokei](https://github.com/XAMPPRocky/tokei)
+- [z](https://github.com/ajeetdsouza/zoxide): navigate file system faster
 
 ### Themes
 
