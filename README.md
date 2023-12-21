@@ -55,7 +55,7 @@ C-a + I
 ### Tools
 
 - Language manager [rtx](https://github.com/jdx/rtx)
-- ripgrep
+- [ripgrep](https://github.com/BurntSushi/ripgrep) to search directory for regex pattern
 - fd
 - ffmpeg
 - fzf
@@ -67,6 +67,7 @@ C-a + I
 - neovim
 - pv
 - tree
+- See lines of code with [tokei](https://github.com/XAMPPRocky/tokei)
 
 ### Themes
 
