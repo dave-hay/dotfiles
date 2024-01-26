@@ -39,7 +39,10 @@ prompt pure
 export LS_COLORS="$(vivid generate one-dark)"
 
 # rtx
-eval "$(/usr/local/bin/rtx activate zsh)"
+# eval "$(/usr/local/bin/rtx activate zsh)"
+# eval "$(~/.local/bin/mise activate zsh)"
+# eval "$(/usr/local/bin/mise activate zsh)"
+eval "$(mise activate zsh)"
 
 export PATH="/usr/local/sbin:$PATH"
 export PATH="$HOME/dotfiles/scripts:$PATH"

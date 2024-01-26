@@ -8,9 +8,9 @@
     ~/.config/nvim:
       create: true
       path: config/nvim
-    ~/.config/rtx/config.toml:
+    ~/.config/mise/config.toml:
       create: true
-      path: config/rtx/config.toml
+      path: config/mise/config.toml
     ~/.hammerspoon:
       create: true
       path: hammerspoon

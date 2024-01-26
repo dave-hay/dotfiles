@@ -54,7 +54,7 @@ C-a + I
 
 ### Tools
 
-- Language manager [rtx](https://github.com/jdx/rtx)
+- Language manager [mise](https://github.com/jdx/mise)
 - [ripgrep](https://github.com/BurntSushi/ripgrep) to search directory for regex pattern
 - fd
 - ffmpeg
