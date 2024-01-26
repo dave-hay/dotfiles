@@ -38,33 +38,17 @@ prompt pure
 # vivid LS_COLORS
 export LS_COLORS="$(vivid generate one-dark)"
 
-# rtx
-# eval "$(/usr/local/bin/rtx activate zsh)"
-# eval "$(~/.local/bin/mise activate zsh)"
-# eval "$(/usr/local/bin/mise activate zsh)"
 eval "$(mise activate zsh)"
 
-export PATH="/usr/local/sbin:$PATH"
-export PATH="$HOME/dotfiles/scripts:$PATH"
-
-# direnv
-# eval "$(direnv hook zsh)"
+# Golang
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# emacs
-# PATH="$HOME/.emacs.d/bin:$PATH"
-
-# sapling
-# ulimit -n 1048576 1048576
-
-# export WASMTIME_HOME="$HOME/.wasmtime"
-
-# export PATH="$WASMTIME_HOME/bin:$PATH"
-
-# bun completions
-# [ -s "~/.bun/_bun" ] && source "~/.bun/_bun"
+export PATH="/usr/local/sbin:$PATH"
+export PATH="$HOME/dotfiles/scripts:$PATH"
 
 # autojump
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
@@ -92,12 +76,24 @@ export PATH="$HOME/dotfiles/scripts:$PATH"
 ##### OLD #####
 
 # go
-# export GOPATH="$HOME/.asdf/installs/golang/1.20/packages"
-# export GOROOT="$HOME/.asdf/installs/golang/1.20/go"
-# export PATH=$PATH:$GOPATH/bin
-# export PATH=$PATH:$GOROOT/bin
 # export GOBIN=$(go env GOBIN)
 # export PATH=$PATH:$GOBIN
 #
 # /usr/local/share/zsh/site-functions # for completions
 # source /opt/intel/oneapi/setvars.sh > /dev/null
+#
+# direnv
+# eval "$(direnv hook zsh)"
+
+# emacs
+# PATH="$HOME/.emacs.d/bin:$PATH"
+
+# sapling
+# ulimit -n 1048576 1048576
+
+# export WASMTIME_HOME="$HOME/.wasmtime"
+
+# export PATH="$WASMTIME_HOME/bin:$PATH"
+
+# bun completions
+# [ -s "~/.bun/_bun" ] && source "~/.bun/_bun"
