@@ -50,8 +50,8 @@ export PATH=$PATH:$GOROOT/go/bin
 export PATH="/usr/local/sbin:$PATH"
 export PATH="$HOME/dotfiles/scripts:$PATH"
 
-# autojump
-[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+# zoxide
+eval "$(zoxide init zsh)"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
