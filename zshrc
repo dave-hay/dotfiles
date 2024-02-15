@@ -41,8 +41,8 @@ export LS_COLORS="$(vivid generate one-dark)"
 eval "$(mise activate zsh)"
 
 # Golang
-export PATH=$PATH:$GOPATH/bin
-export PATH=$PATH:$GOROOT/bin
+export PATH=$PATH:$GOPATH/go/bin
+export PATH=$PATH:$GOROOT/go/bin
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
