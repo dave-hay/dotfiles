@@ -96,7 +96,7 @@ alias pnl="pnpm lint"
 alias tm='tmux'
 alias tmls='tmux ls'
 alias tmns='tmux new -s'
-alias tmas='tmux attach -t'
+alias tmas='tmux a'
 alias tmrs='tmux rename-session -t'
 
 # go
