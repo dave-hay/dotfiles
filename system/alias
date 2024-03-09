@@ -42,6 +42,7 @@ alias ip="ipconfig getifaddr en0"
 # Homebrew
 alias brud="brew update; brew outdated;"
 alias brod="brew outdated"
+alias brug="brew upgrade"
 alias brup="brew upgrade"
 alias brls="brew list"
 alias brun='brew uninstall'
