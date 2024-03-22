@@ -12,6 +12,12 @@ case $1 in
     git push -u origin main
     echo -n "pushin' 🅿️ homie"
     ;;
+  "add-push" | ap)
+    git add .
+    git commit -m "$2"
+    git push -u origin main
+    echo -n "pushin' 🅿️ homie"
+    ;;
   lb)
     # last branch
     git checkout -
@@ -23,12 +29,6 @@ case $1 in
   db)
     # delete branch
     git branch -D "$2"
-    ;;
-  hub | h)
-    git add .
-    git commit -m "$2"
-    git push -u origin main
-    echo -n "pushin' 🅿️ homie"
     ;;
   amen)
     git add .
