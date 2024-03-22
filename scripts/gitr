@@ -43,15 +43,24 @@ case $1 in
   ro)
     # reset origin/current branch
     git reset --hard @{u}
-    echo -n "origion now local"
+    echo -n "origin now local"
     ;;
   clear)
     git rm -rf --cached .
     echo -n "files cleared"
     ;;
-  help | -h)
+  help | h)
     echo "dont worry lad 🤙"
-    echo "📝 commands are..."
-    echo "add, push, hub, amen, amend"
-    echo "reset"
+    echo "📝 commands are...
+    add | a - add all and commit
+    push | p - push commit to remote
+    add-push | ap - combo of above
+    lb - last branch
+    nb ... - new branch 'name'
+    db - delete branch
+    amen - amend commit with new changes
+    reset | r - reset all unstaged changes
+    ro - reset hard to origin
+    clear - clear cached files
+    "
 esac
