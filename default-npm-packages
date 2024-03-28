@@ -5,6 +5,7 @@ jest
 npm-check
 npm-check-updates
 pnpm
+@fsouza/prettierd
 prettier
 serve
 ts-node
