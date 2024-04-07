@@ -23,3 +23,4 @@
     ~/.gitignore: gitignore-global
     ~/.default-npm-packages: default-npm-packages
     ~/.default-python-packages: default-python-packages
+    ~/.default-go-packages: default-go-packages
