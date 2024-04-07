@@ -16,7 +16,9 @@
       path: hammerspoon
     ~/.tmux.conf: tmux.conf
     ~/.ideavimrc: ideavimrc
-    ~/.zprofile: zprofile
+    ~/.zprofile:
+      force: true
+      path: zprofile
     ~/.zshrc: zshrc
     ~/.zshenv: zshenv
     ~/.condarc: condarc

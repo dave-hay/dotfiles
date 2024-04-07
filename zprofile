@@ -12,6 +12,7 @@
 # brew link --force python@3.10
 
 
+eval "$(/usr/local/bin/brew shellenv)"
 
-export PATH="$HOME/scripts:$PATH"
+# export PATH="$HOME/scripts:$PATH"
 export PATH="$HOME/dotfiles/scripts:$PATH"
