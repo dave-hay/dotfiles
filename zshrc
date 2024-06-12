@@ -48,6 +48,7 @@ eval "$(mise activate zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export PATH="/usr/local/sbin:$PATH"
+export PATH="$HOME/.docker/bin:$PATH"
 export PATH="$HOME/dotfiles/scripts:$PATH"
 
 # zoxide
