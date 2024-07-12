@@ -5,6 +5,8 @@ alias glb='git checkout -'
 alias gnb='git checkout -b'
 alias gcl='git rm -rf --cached .'
 alias gp='git push -u origin main'
+alias gm='git merge'
+alias gri='git rebase -i'
 
 alias ga='git add'
 alias gaa='git add --all'
