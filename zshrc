@@ -54,6 +54,11 @@ export PATH="$HOME/dotfiles/scripts:$PATH"
 # zoxide
 eval "$(zoxide init zsh)"
 
+#
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+export PATH="$PATH:$ANDROID_HOME/emulator"
+export PATH="$PATH:$ANDROID_HOME/platform-tools"
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 # __conda_setup="$('~/mambaforge/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
