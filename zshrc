@@ -44,6 +44,9 @@ eval "$(mise activate zsh)"
 # export PATH=$PATH:$GOPATH/go/bin
 # export PATH=$PATH:$GOROOT/go/bin
 
+## alias to love
+alias love="/Applications/love.app/Contents/MacOS/love"
+
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
