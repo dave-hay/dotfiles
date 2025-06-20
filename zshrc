@@ -106,3 +106,6 @@ export PATH="$PATH:$ANDROID_HOME/platform-tools"
 
 # bun completions
 # [ -s "~/.bun/_bun" ] && source "~/.bun/_bun"
+
+# Created by `pipx` on 2025-05-09 19:50:06
+export PATH="$PATH:/Users/davidhay/.local/bin"

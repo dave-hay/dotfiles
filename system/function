@@ -43,7 +43,7 @@ function dirsize() {
 function misepy() {
   cat > .mise.toml << EOL
 [tools]
-python = "3.11" # [optional] will be used for the venv
+python = "3.12" # [optional] will be used for the venv
 
 [env]
 _.python.venv = { path = ".venv", create = true } # create the venv if it doesn't exist
